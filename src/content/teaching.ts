@@ -45,7 +45,7 @@ export const teachingHistory: TeachingRecord[] = [
 
 // 정규 과목 외 수업 혁신 지원
 export const teachingSupport = [
-  "공학재료학 PBL AI 모듈 (스마트모빌리티학부, 2026-1) — 단계별 AI 도구 지도 특강, LLM 활용 기록보고서 평가 설계, 다중 AI 교차 채점 보조",
+  "공학재료학 PBL AI 모듈 (2025-1 · 2026-1) — 단계별 AI 도구 지도 특강, LLM 활용 기록보고서 평가 설계, 다중 AI 교차 채점 보조",
 ];
 
 export const teachingAward =

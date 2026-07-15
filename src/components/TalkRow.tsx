@@ -8,9 +8,9 @@ export default function TalkRow({ t }: { t: Talk }) {
       <span className="text-[15.5px] font-extrabold tracking-tight">
         {t.host}
       </span>
-      <span className="muted text-[14px] leading-6">
+      <span className="text-[14.5px] font-medium leading-6">
         {t.title}
-        {t.note ? ` · ${t.note}` : ""}
+        {t.note ? <span className="muted font-normal"> · {t.note}</span> : ""}
       </span>
       <span className="flex items-center gap-1.5 justify-self-start sm:justify-self-end">
         <span className="accent accent-bg rounded-full px-2.5 py-0.5 text-[11px] font-bold">
