@@ -7,6 +7,7 @@ export interface Award {
 
 export const awards: Award[] = [
   { date: "2025.12.29", title: "고려대학교 AI 활용 우수수업사례 공모전 우수상" },
+  { date: "2025-1학기", title: "고려대학교 교직실무 우수강좌 선정" },
   { date: "2025.01.23", title: "경기교육데이터 학술대회 최우수논문상" },
   { date: "2024.08.23", title: "고려대학교 대학원 우수논문상" },
   { date: "2024.02.21", title: "KU Achievement Award" },
