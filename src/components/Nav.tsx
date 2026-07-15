@@ -31,10 +31,10 @@ export default function Nav() {
       >
         <div>
           <Link href="/" className="block">
-            <div className="text-[26px] font-extrabold leading-tight tracking-tight">
+            <div className="serif text-[28px] font-black leading-tight tracking-tight">
               선애경
             </div>
-            <div className="muted mt-0.5 text-[12.5px] tracking-wide">
+            <div className="muted mt-0.5 text-[12.5px] tracking-[0.12em]">
               SUN, Aekyoung
             </div>
           </Link>

@@ -8,21 +8,23 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #1a1a1a;
-  --muted: #6b6b6b;
-  --hairline: #e5e5e5;
+  --foreground: #171513;
+  --muted: #6f6a66;
+  --hairline: #e2ded9;
+  --rule: #171513;
   --accent: #862633;
-  --accent-soft: rgba(134, 38, 51, 0.06);
+  --accent-soft: rgba(134, 38, 51, 0.07);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #121212;
-    --foreground: #ececec;
-    --muted: #9a9a9a;
-    --hairline: #2e2e2e;
+    --background: #131211;
+    --foreground: #ecebe9;
+    --muted: #9d9893;
+    --hairline: #2f2c29;
+    --rule: #ecebe9;
     --accent: #d4677a;
-    --accent-soft: rgba(212, 103, 122, 0.08);
+    --accent-soft: rgba(212, 103, 122, 0.1);
   }
 }
 
@@ -37,7 +39,15 @@ body {
   overflow-wrap: break-word;
 }
 
+/* 매거진 디스플레이 서체 */
+.serif {
+  font-family: "Noto Serif KR", "Nanum Myeongjo", Georgia, "Times New Roman",
+    serif;
+}
+
 .accent { color: var(--accent); }
 .muted { color: var(--muted); }
 .hairline { border-color: var(--hairline); }
+.rule { border-color: var(--rule); }
 .accent-bg { background: var(--accent-soft); }
+.accent-fill { background: var(--accent); color: #fff; }

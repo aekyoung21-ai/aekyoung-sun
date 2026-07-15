@@ -19,7 +19,10 @@ export default function En() {
   return (
     <div className="space-y-10">
       <section>
-        <h1 className="text-3xl font-bold tracking-tight">
+        <p className="accent text-[12px] font-bold uppercase tracking-[0.3em]">
+          Researcher · AI in Education
+        </p>
+        <h1 className="serif mt-3 text-[44px] font-black tracking-tight">
           {profile.nameEn}{" "}
           <span className="muted text-xl font-normal">선애경</span>
         </h1>

@@ -29,15 +29,20 @@ export default function RootLayout({
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@latest/dist/web/static/pretendard.css"
         />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700;900&display=swap"
+        />
       </head>
       <body className="min-h-screen">
         <Nav />
         <div className="lg:pl-60">
-          <main className="mx-auto max-w-3xl px-6 py-12 lg:px-12 lg:py-16">
+          <main className="mx-auto w-full max-w-[1180px] px-6 py-12 lg:px-14 lg:py-14">
             {children}
           </main>
-          <footer className="border-t hairline">
-            <div className="mx-auto flex max-w-3xl items-center justify-between px-6 py-6 text-[13px] muted lg:px-12">
+          <footer className="border-t-2 rule">
+            <div className="mx-auto flex w-full max-w-[1180px] items-center justify-between px-6 py-6 text-[13px] muted lg:px-14">
               <span>© {new Date().getFullYear()} SUN, Aekyoung</span>
               <Link href="/en" className="hover:opacity-70">
                 English

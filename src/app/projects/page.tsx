@@ -9,30 +9,39 @@ export const metadata: Metadata = {
 export default function Projects() {
   return (
     <div>
-      <p className="accent text-[12px] font-bold uppercase tracking-[0.22em]">
+      <p className="accent text-[12px] font-bold uppercase tracking-[0.3em]">
         Projects in Progress
       </p>
-      <h1 className="mt-2 text-[30px] font-extrabold tracking-tight">
+      <h1 className="serif mt-3 text-[40px] font-black tracking-tight">
         프로젝트 <span className="accent">(-ing)</span>
       </h1>
-      <p className="muted mt-2 text-[13.5px]">지금 하고 있는 일들 — 개요만 간단히.</p>
+      <p className="muted mt-2 text-[14px]">지금 하고 있는 일들 — 개요만 간단히.</p>
 
-      <ul className="mt-8 space-y-4">
-        {currentProjects.map((p) => (
+      <ul className="mt-8 space-y-8">
+        {currentProjects.map((p, i) => (
           <li
             key={p.title}
-            className="rounded-xl border hairline p-5 transition-shadow hover:shadow-sm"
+            className="grid grid-cols-1 gap-4 border-t-2 rule pt-5 lg:grid-cols-[190px_minmax(0,1fr)] lg:gap-12"
           >
-            <div className="flex flex-wrap items-center gap-2">
-              <h2 className="text-[16px] font-bold">{p.title}</h2>
-              <span className="accent accent-bg rounded-full px-2.5 py-0.5 text-[11.5px] font-semibold">
+            <div>
+              <div className="serif text-[40px] font-black leading-none opacity-15">
+                {String(i + 1).padStart(2, "0")}
+              </div>
+              <span className="accent accent-bg mt-2 inline-block rounded-full px-2.5 py-0.5 text-[11px] font-bold">
                 {p.status}
               </span>
             </div>
-            <p className="mt-2 text-[14px] leading-7">{p.summary}</p>
-            <p className="muted mt-2 text-[13px]">
-              {p.role} · {p.since} ~
-            </p>
+            <div>
+              <h2 className="serif text-[22px] font-bold leading-snug">
+                {p.title}
+              </h2>
+              <p className="mt-3 max-w-[720px] text-[15px] leading-8">
+                {p.summary}
+              </p>
+              <p className="muted mt-3 text-[13px] uppercase tracking-wider">
+                {p.role} · {p.since} ~
+              </p>
+            </div>
           </li>
         ))}
       </ul>
