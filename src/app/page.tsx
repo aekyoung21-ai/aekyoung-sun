@@ -102,7 +102,7 @@ function ContactBlock() {
       </a>
       <a
         href={`tel:${profile.phone}`}
-        className="serif block text-[19px] font-bold tabular-nums hover:opacity-70 sm:text-[20px]"
+        className="serif accent block text-[22px] font-bold tabular-nums hover:opacity-70 sm:text-[24px]"
       >
         {profile.phone}
       </a>
