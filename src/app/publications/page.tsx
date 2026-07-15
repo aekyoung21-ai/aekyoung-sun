@@ -17,10 +17,6 @@ export default function Publications() {
         <h1 className="serif mt-3 text-[40px] font-black tracking-tight">
           논문 · 저서
         </h1>
-        <p className="muted mt-2 text-[14px]">
-          게재 완료 논문 {publications.length}편 + 저서 {books.length}권 · 연도
-          역순 · APA 표기
-        </p>
 
         <ul className="mt-8 border-t-2 rule">
           {publications.map((p) => (

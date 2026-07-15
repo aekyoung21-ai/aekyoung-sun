@@ -15,7 +15,6 @@ export default function Projects() {
       <h1 className="serif mt-3 text-[40px] font-black tracking-tight">
         프로젝트 <span className="accent">(-ing)</span>
       </h1>
-      <p className="muted mt-2 text-[14px]">지금 하고 있는 일들 — 개요만 간단히.</p>
 
       <ul className="mt-8 space-y-8">
         {currentProjects.map((p, i) => (

@@ -16,9 +16,6 @@ export default function Talks() {
       <h1 className="serif mt-3 text-[40px] font-black tracking-tight">
         특강 · 자문 · 발표
       </h1>
-      <p className="muted mt-2 text-[14px]">
-        생성형 AI 활용·윤리 중심 {talks.length}건 · 연대기 역순
-      </p>
 
       <ul className="mt-8 border-t-2 rule">
         {talks.map((t) => (
