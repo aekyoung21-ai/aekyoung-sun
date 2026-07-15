@@ -1,5 +1,12 @@
-// 프로필 기본 정보 — 수정 후 `npm run build`로 확인, Vercel 재배포로 반영
-// ⚠️ 전화번호는 공개 웹이므로 게재하지 않는다 (기본 방침)
+// 프로필 기본 정보 — 수정 후 `npm run build`로 확인, 재배포로 반영
+// 전화번호: 2026-07-15 교수님 명시 요청으로 게재 (공개 웹 크롤링 가능성 인지)
+
+export interface CareerItem {
+  period: string;
+  role: string;
+  org: string;
+  primary?: boolean; // 경력 섹션 상단 강조
+}
 
 export const profile = {
   nameKo: "선애경",
@@ -8,6 +15,7 @@ export const profile = {
   titleKo: "고려대학교 공학교육혁신센터 연구교수",
   titleEn: "Research Professor, Innovation Center for Engineering Education, Korea University",
   email: "aekyoung21@korea.ac.kr",
+  phone: "010-5090-7296",
   keywords: ["AI in Education", "고등교육", "교육정책·거버넌스"],
   keywordsEn: [
     "AI in Education",
@@ -41,14 +49,25 @@ export const profile = {
       note: "",
     },
   ],
+  // primary: true — 경력 섹션 상단에 크게 강조되는 핵심 직책
   career: [
+    {
+      period: "2025.04 ~ 현재",
+      role: "연구교수",
+      org: "고려대학교 공학교육혁신센터",
+      primary: true,
+    },
+    {
+      period: "2026.01 ~ 현재",
+      role: "사무총장",
+      org: "한국교원교육학회",
+      primary: true,
+    },
     { period: "2026.04 ~ 현재", role: "학술위원", org: "안암교육학회" },
-    { period: "2026.01 ~ 현재", role: "사무총장", org: "한국교원교육학회" },
     { period: "2025.06 ~ 현재", role: "회장", org: "한국엄마학자협회(KMSS)" },
-    { period: "2025.04 ~ 현재", role: "연구교수", org: "고려대학교 공학교육혁신센터" },
     { period: "2024.09 ~ 2025.08", role: "강사", org: "고려대학교 교직팀" },
     { period: "2022.01 ~ 2024.12", role: "사무국장", org: "한국교육학회" },
     { period: "2019.05 ~ 2020.02", role: "입학사정관", org: "동국대학교 입학처" },
     { period: "2015.05 ~ 2017.01", role: "팀원", org: "명지대학교 산학협력단" },
-  ],
+  ] as CareerItem[],
 };

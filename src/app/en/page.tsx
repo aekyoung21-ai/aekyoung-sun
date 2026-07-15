@@ -67,6 +67,10 @@ export default function En() {
           <a href={`mailto:${profile.email}`} className="accent font-medium">
             {profile.email}
           </a>
+          <span className="muted"> · </span>
+          <a href={`tel:${profile.phone}`} className="font-medium tabular-nums">
+            {profile.phone}
+          </a>
         </p>
       </section>
 

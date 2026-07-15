@@ -68,19 +68,42 @@ export default function Home() {
 
       {/* 03 Career */}
       <Section no="03" kicker="Career" title="경력">
-        <ul>
-          {profile.career.map((c) => (
-            <li
-              key={c.period + c.org}
-              className="grid grid-cols-1 items-baseline gap-x-6 gap-y-0.5 border-b hairline py-3.5 sm:grid-cols-[190px_140px_minmax(0,1fr)]"
-            >
-              <span className="muted text-[13.5px] tabular-nums">
-                {c.period}
-              </span>
-              <span className="text-[15px] font-extrabold">{c.role}</span>
-              <span className="text-[15px]">{c.org}</span>
-            </li>
-          ))}
+        {/* 핵심 직책 — 상단 강조 */}
+        <div className="grid gap-4 sm:grid-cols-2">
+          {profile.career
+            .filter((c) => c.primary)
+            .map((c) => (
+              <div
+                key={c.period + c.org}
+                className="accent-bg rounded-xl border-l-4 p-5"
+                style={{ borderColor: "var(--accent)" }}
+              >
+                <div className="serif accent text-[22px] font-bold leading-tight">
+                  {c.role}
+                </div>
+                <div className="mt-1 text-[15.5px] font-semibold">{c.org}</div>
+                <div className="muted mt-1.5 text-[13px] tabular-nums">
+                  {c.period}
+                </div>
+              </div>
+            ))}
+        </div>
+        {/* 나머지 경력 */}
+        <ul className="mt-5">
+          {profile.career
+            .filter((c) => !c.primary)
+            .map((c) => (
+              <li
+                key={c.period + c.org}
+                className="grid grid-cols-1 items-baseline gap-x-6 gap-y-0.5 border-b hairline py-3.5 sm:grid-cols-[190px_140px_minmax(0,1fr)]"
+              >
+                <span className="muted text-[13.5px] tabular-nums">
+                  {c.period}
+                </span>
+                <span className="text-[15px] font-extrabold">{c.role}</span>
+                <span className="text-[15px]">{c.org}</span>
+              </li>
+            ))}
         </ul>
       </Section>
 
@@ -163,12 +186,20 @@ export default function Home() {
 
       {/* 08 Contact */}
       <Section no="08" kicker="Contact" title="연락처">
-        <a
-          href={`mailto:${profile.email}`}
-          className="serif accent text-[24px] font-bold hover:opacity-70"
-        >
-          {profile.email}
-        </a>
+        <div className="space-y-2">
+          <a
+            href={`mailto:${profile.email}`}
+            className="serif accent block text-[24px] font-bold hover:opacity-70"
+          >
+            {profile.email}
+          </a>
+          <a
+            href={`tel:${profile.phone}`}
+            className="serif block text-[20px] font-bold tabular-nums hover:opacity-70"
+          >
+            {profile.phone}
+          </a>
+        </div>
       </Section>
     </div>
   );
