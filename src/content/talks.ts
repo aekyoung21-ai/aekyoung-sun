@@ -2,14 +2,7 @@
 // 일자 불일치 시 이력서 PDF 표기를 따른다 (권위 소스)
 // 추가 시: 배열 맨 앞에 객체 추가 (연대기 역순 정렬은 페이지에서 자동)
 
-export type TalkFormat =
-  | "특강"
-  | "자문"
-  | "발표"
-  | "강연"
-  | "워크숍"
-  | "연수"
-  | "제작";
+export type TalkFormat = "특강" | "자문" | "발표" | "강연" | "워크숍" | "연수";
 
 export interface Talk {
   date: string; // YYYY.MM.DD
@@ -25,7 +18,7 @@ export const talks: Talk[] = [
     date: "2026.10",
     title: "「AI 활용 교수법」 교수역량 강화 컨텐츠 — 수업설계·평가 (동영상 2편 + 매뉴얼)",
     host: "고려대학교 교수학습지원센터 BK21",
-    format: "제작",
+    format: "연수",
     upcoming: true,
   },
   {
@@ -39,7 +32,8 @@ export const talks: Talk[] = [
     date: "2026.08.25",
     title: "학부생을 위한 AI 활용법 (온라인 녹화 2모듈)",
     host: "영산대학교",
-    format: "연수",
+    format: "특강",
+    note: "녹화본 게시",
     upcoming: true,
   },
   {
