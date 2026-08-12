@@ -55,13 +55,7 @@ export const profile = {
     {
       period: "2025.04 ~ 현재",
       role: "연구교수",
-      org: "고려대학교 공학교육혁신센터",
-      primary: true,
-    },
-    {
-      period: "2026.09 ~ 현재",
-      role: "공동 소속 — 전교 AI 교수법 개발",
-      org: "고려대학교 대학혁신지원사업(본부)",
+      org: "고려대학교 공학교육혁신센터 (본부 대학혁신지원사업 지원 겸직)",
       primary: true,
     },
     {
