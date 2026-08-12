@@ -27,12 +27,12 @@ export const profile = {
     "생성형 AI와 텍스트마이닝을 결합한 교육 거버넌스 연구로 박사학위를 받았다(고려대학교, 2024).",
     "현재 대학 수업과 연구에서의 AI 활용, 생성형 AI 윤리 가이드라인, 공학교육 혁신을 연구하고 실천한다.",
     "고려대학교 공학교육혁신센터 연구교수로 재직하며, AI 공학교육지원센터 설립을 주도하고 있다.",
-    "2026년 9월부터 본부 혁신지원사업운영팀에 공동 소속되어, 고려대학교 전체의 AI 교수법 개발에 주도적으로 참여한다.",
+    "2026년 9월부터 본부 대학혁신지원사업에 공동 소속되어, 고려대학교 전체의 AI 교수법 개발에 주도적으로 참여한다.",
     "AI 에이전트 시스템을 직접 개발·활용하며, 대학과 기관 대상 AI 활용·윤리 특강과 자문을 활발히 수행한다.",
     "한국교원교육학회 사무총장(2026~)을 맡고 있으며, 한국교육학회 사무국장(2022~2024)을 지냈다.",
   ],
   aboutEn:
-    "Aekyoung Sun is a Research Professor at the Innovation Center for Engineering Education, Korea University. She received her Ph.D. in Education (Educational Administration and Higher Education) from Korea University in 2024, with a dissertation combining generative AI and text mining for research on educational governance. Her current work focuses on the use of AI in university teaching and research, ethical frameworks for generative AI, and innovation in engineering education. Since September 2026, she has also been jointly affiliated with the University Innovation Support Program Team at Korea University, taking a leading role in developing AI-integrated pedagogy across the university. She serves as Secretary General of the Korean Society for the Study of Teacher Education (2026–) and previously served as Secretary General of the Korean Educational Research Association (2022–2024).",
+    "Aekyoung Sun is a Research Professor at the Innovation Center for Engineering Education, Korea University. She received her Ph.D. in Education (Educational Administration and Higher Education) from Korea University in 2024, with a dissertation combining generative AI and text mining for research on educational governance. Her current work focuses on the use of AI in university teaching and research, ethical frameworks for generative AI, and innovation in engineering education. Since September 2026, she has also been jointly affiliated with the University Innovation Support Project at Korea University, taking a leading role in developing AI-integrated pedagogy across the university. She serves as Secretary General of the Korean Society for the Study of Teacher Education (2026–) and previously served as Secretary General of the Korean Educational Research Association (2022–2024).",
   education: [
     {
       year: "2024.08",
@@ -61,7 +61,7 @@ export const profile = {
     {
       period: "2026.09 ~ 현재",
       role: "공동 소속 — 전교 AI 교수법 개발",
-      org: "고려대학교 혁신지원사업운영팀(본부)",
+      org: "고려대학교 대학혁신지원사업(본부)",
       primary: true,
     },
     {
