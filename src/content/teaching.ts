@@ -37,6 +37,7 @@ export interface TeachingRecord {
 
 // 학기별 교육 실적 (학기 역순)
 export const teachingHistory: TeachingRecord[] = [
+  { semester: "2026-2", courses: "교직실무(03)", org: "고려대학교" },
   { semester: "2026-1", courses: "교육행정학 · 교직실무(03)", org: "고려대학교" },
   { semester: "2025-2", courses: "교직실무(03)", org: "고려대학교" },
   { semester: "2025-1", courses: "교육행정학 · 교직실무(03)", org: "고려대학교" },

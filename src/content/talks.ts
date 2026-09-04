@@ -26,7 +26,6 @@ export const talks: Talk[] = [
     title: "교원 AI 역량강화 부트캠프 (2차)",
     host: "영산대학교",
     format: "워크숍",
-    upcoming: true,
   },
   {
     date: "2026.08.25",
@@ -34,7 +33,6 @@ export const talks: Talk[] = [
     host: "영산대학교",
     format: "특강",
     note: "녹화본 게시",
-    upcoming: true,
   },
   {
     date: "2026.07.28",
