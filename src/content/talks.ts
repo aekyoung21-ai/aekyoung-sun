@@ -36,8 +36,8 @@ export const talks: Talk[] = [
     upcoming: true,
   },
   {
-    date: "2026.11.11",
-    title: "Research OS 워크숍 멘토",
+    date: "2026.11",
+    title: "Research OS 워크숍 멘토 (2026.11~12)",
     host: "고려대학교 학부대학",
     format: "워크숍",
     upcoming: true,
