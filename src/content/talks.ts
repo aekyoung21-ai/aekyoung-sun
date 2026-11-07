@@ -15,11 +15,44 @@ export interface Talk {
 
 export const talks: Talk[] = [
   {
-    date: "2026.10",
+    date: "2026.12",
+    title: "생성형 AI 활용 수업설계 워크숍",
+    host: "건국대학교 교수학습지원센터",
+    format: "워크숍",
+    upcoming: true,
+  },
+  {
+    date: "2026.11.23",
+    title: "대학 수업의 AI 윤리 — AI를 책임 있게 쓰는 법 (강의 영상 촬영)",
+    host: "고려대학교 세종캠퍼스 교수학습혁신센터",
+    format: "연수",
+    upcoming: true,
+  },
+  {
+    date: "2026.11.11",
     title: "「AI 활용 교수법」 교수역량 강화 컨텐츠 — 수업설계·평가 (동영상 2편 + 매뉴얼)",
     host: "고려대학교 교수학습지원센터 BK21",
     format: "연수",
     upcoming: true,
+  },
+  {
+    date: "2026.11.11",
+    title: "Research OS 워크숍 멘토",
+    host: "고려대학교 학부대학",
+    format: "워크숍",
+    upcoming: true,
+  },
+  {
+    date: "2026.10.28",
+    title: "AI 윤리 딜레마 시나리오 내용타당도 검토",
+    host: "강원대학교",
+    format: "자문",
+  },
+  {
+    date: "2026.09",
+    title: "「AI 상상력 라이브러리」 교수자용 AI 활용 콘텐츠 개발 (2026.09~2027.02)",
+    host: "서울여자대학교 교수학습센터",
+    format: "자문",
   },
   {
     date: "2026.08.27",
