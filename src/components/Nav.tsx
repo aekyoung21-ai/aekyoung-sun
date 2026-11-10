@@ -8,7 +8,7 @@ const items = [
   { href: "/", label: "홈", no: "01" },
   { href: "/publications", label: "논문·저서", no: "02" },
   { href: "/projects", label: "프로젝트", no: "03" },
-  { href: "/talks", label: "특강·발표", no: "04" },
+  { href: "/talks", label: "특강·자문", no: "04" },
   { href: "/media", label: "언론보도", no: "05" },
   { href: "/teaching", label: "강의", no: "06" },
   { href: "/en", label: "English", no: "07" },

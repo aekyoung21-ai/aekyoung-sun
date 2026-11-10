@@ -210,7 +210,7 @@ export default function Home() {
         <MobileAccordion no="06" label="수상">
           <AwardsList />
         </MobileAccordion>
-        <MobileLinkRow no="07" label="특강·발표" href="/talks" />
+        <MobileLinkRow no="07" label="특강·자문" href="/talks" />
         <MobileLinkRow no="08" label="언론보도" href="/media" />
         <MobileLinkRow no="09" label="강의" href="/teaching" />
         <MobileAccordion no="10" label="연락처">
@@ -278,7 +278,7 @@ export default function Home() {
           <AwardsList />
         </Section>
 
-        <Section no="07" kicker="Recent Talks" title="최근 특강·발표">
+        <Section no="07" kicker="Recent Talks" title="최근 특강·자문">
           <ul className="border-t hairline">
             {recentTalks.map((t) => (
               <TalkRow key={t.date + t.title} t={t} />

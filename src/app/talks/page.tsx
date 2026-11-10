@@ -3,8 +3,8 @@ import TalkRow from "@/components/TalkRow";
 import { talks } from "@/content/talks";
 
 export const metadata: Metadata = {
-  title: "특강·발표",
-  description: "선애경 — 특강·자문·발표 연대기 (생성형 AI 활용·윤리 중심)",
+  title: "특강·자문",
+  description: "선애경 — 특강·자문 연대기 (생성형 AI 활용·윤리 중심)",
 };
 
 export default function Talks() {
@@ -14,7 +14,7 @@ export default function Talks() {
         Talks · Consulting
       </p>
       <h1 className="serif mt-3 text-[40px] font-black tracking-tight">
-        특강 · 자문 · 발표
+        특강 · 자문
       </h1>
 
       <ul className="mt-8 border-t-2 rule">
