@@ -9,8 +9,9 @@ const items = [
   { href: "/publications", label: "논문·저서", no: "02" },
   { href: "/projects", label: "프로젝트", no: "03" },
   { href: "/talks", label: "특강·발표", no: "04" },
-  { href: "/teaching", label: "강의", no: "05" },
-  { href: "/en", label: "English", no: "06" },
+  { href: "/media", label: "언론보도", no: "05" },
+  { href: "/teaching", label: "강의", no: "06" },
+  { href: "/en", label: "English", no: "07" },
 ];
 
 function isActive(pathname: string, href: string) {

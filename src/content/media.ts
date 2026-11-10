@@ -23,4 +23,11 @@ export const media: MediaItem[] = [
     url: "https://www.kunews.ac.kr/news/articleView.html?idxno=51199",
     note: "AI 활용 자가점검표·과제 평가 방식 인터뷰",
   },
+  {
+    date: "2026.06.15",
+    outlet: "The Argus",
+    title: "The Transformation of Society in the Age of AI",
+    url: "https://www.theargus.org/news/articleView.html?idxno=3280",
+    note: "대학 AI 가이드라인의 실효성·책임 배분 인터뷰 (영문)",
+  },
 ];

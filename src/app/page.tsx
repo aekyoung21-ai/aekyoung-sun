@@ -211,8 +211,9 @@ export default function Home() {
           <AwardsList />
         </MobileAccordion>
         <MobileLinkRow no="07" label="특강·발표" href="/talks" />
-        <MobileLinkRow no="08" label="강의" href="/teaching" />
-        <MobileAccordion no="09" label="연락처">
+        <MobileLinkRow no="08" label="언론보도" href="/media" />
+        <MobileLinkRow no="09" label="강의" href="/teaching" />
+        <MobileAccordion no="10" label="연락처">
           <ContactBlock />
         </MobileAccordion>
       </nav>

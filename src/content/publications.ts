@@ -164,5 +164,23 @@ export const books: Book[] = [
   },
 ];
 
+export interface Report {
+  authors: string;
+  year: number;
+  title: string;
+  publisher: string;
+  url?: string;
+}
+
+// 정책리포트 — 발간된 것만
+export const reports: Report[] = [
+  {
+    authors: "선애경",
+    year: 2026,
+    title: "대학 적립금 운용의 쟁점과 개선방향",
+    publisher: "자유기업원 CFE Report",
+  },
+];
+
 // 홈 Highlights에 노출할 대표논문 3편 (단독/제1저자 위주)
 export const highlights = [publications[0], publications[2], publications[3]];
