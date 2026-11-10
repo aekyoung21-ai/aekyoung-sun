@@ -206,12 +206,12 @@ export default function Home() {
           <CareerBlock />
         </MobileAccordion>
         <MobileLinkRow no="04" label="논문·저서" href="/publications" />
-        <MobileLinkRow no="05" label="프로젝트 (-ing)" href="/projects" />
-        <MobileAccordion no="06" label="수상">
+        <MobileLinkRow no="05" label="특강·자문" href="/talks" />
+        <MobileLinkRow no="06" label="언론보도" href="/media" />
+        <MobileLinkRow no="07" label="프로젝트 (-ing)" href="/projects" />
+        <MobileAccordion no="08" label="수상">
           <AwardsList />
         </MobileAccordion>
-        <MobileLinkRow no="07" label="특강·자문" href="/talks" />
-        <MobileLinkRow no="08" label="언론보도" href="/media" />
         <MobileLinkRow no="09" label="강의" href="/teaching" />
         <MobileAccordion no="10" label="연락처">
           <ContactBlock />
@@ -252,7 +252,21 @@ export default function Home() {
           </Link>
         </Section>
 
-        <Section no="05" kicker="Projects" title="프로젝트 (-ing)">
+        <Section no="05" kicker="Recent Talks" title="최근 특강·자문">
+          <ul className="border-t hairline">
+            {recentTalks.map((t) => (
+              <TalkRow key={t.date + t.title} t={t} />
+            ))}
+          </ul>
+          <Link
+            href="/talks"
+            className="accent mt-6 inline-block text-[14px] font-bold hover:opacity-70"
+          >
+            전체 보기 →
+          </Link>
+        </Section>
+
+        <Section no="06" kicker="Projects" title="프로젝트 (-ing)">
           <ul className="grid gap-5 md:grid-cols-3">
             {teaser.map((p) => (
               <li key={p.title} className="border-t-2 rule pt-4">
@@ -274,22 +288,8 @@ export default function Home() {
           </Link>
         </Section>
 
-        <Section no="06" kicker="Awards" title="수상">
+        <Section no="07" kicker="Awards" title="수상">
           <AwardsList />
-        </Section>
-
-        <Section no="07" kicker="Recent Talks" title="최근 특강·자문">
-          <ul className="border-t hairline">
-            {recentTalks.map((t) => (
-              <TalkRow key={t.date + t.title} t={t} />
-            ))}
-          </ul>
-          <Link
-            href="/talks"
-            className="accent mt-6 inline-block text-[14px] font-bold hover:opacity-70"
-          >
-            전체 보기 →
-          </Link>
         </Section>
 
         <Section no="08" kicker="Contact" title="연락처">
