@@ -56,7 +56,7 @@ export const media: MediaItem[] = [
     outlet: "쿠날 (유튜브)",
     title: "‘진정한 학습’을 위해 현명하게 AI 사용하는 법",
     url: "https://youtu.be/xvTRQSxZbso",
-    note: "영상 인터뷰 · 고려대 학생 지식 채널 「쿠날 : K-지식의 날개」",
+    note: "영상 인터뷰 · 「쿠날 : K-지식의 날개」 채널",
   },
   {
     date: "2025.06.18",
