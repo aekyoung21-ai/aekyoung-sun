@@ -52,6 +52,13 @@ export const media: MediaItem[] = [
     note: "대학 AI 가이드라인의 실효성·책임 배분 인터뷰 (영문)",
   },
   {
+    date: "2026.01.19",
+    outlet: "쿠날 (유튜브)",
+    title: "‘진정한 학습’을 위해 현명하게 AI 사용하는 법",
+    url: "https://youtu.be/xvTRQSxZbso",
+    note: "영상 인터뷰 · 고려대 학생 지식 채널 「쿠날 : K-지식의 날개」",
+  },
+  {
     date: "2025.06.18",
     outlet: "EBN",
     title: "자유기업원·좋은규제시민포럼, ‘미국 트럼프 행정부의 행정·교육개혁과 한국적 시사점’ 세미나 개최",
