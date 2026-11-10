@@ -63,6 +63,6 @@ export const media: MediaItem[] = [
     outlet: "한국대학신문",
     title: "“한국 교육체계, 지방교육자치 강화·통합교육 거버넌스 구축 중요”",
     url: "https://news.unn.net/news/articleView.html?idxno=579913",
-    note: "교육 거버넌스 보고서 집필·인터뷰",
+    note: "자유기업원 보고서 「미국 ‘교육부 폐지’ 구상 분석을 통한 한국 교육거버넌스 재구조화 방향」 보도",
   },
 ];

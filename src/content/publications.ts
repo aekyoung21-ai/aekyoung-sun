@@ -180,6 +180,12 @@ export const reports: Report[] = [
     title: "대학 적립금 운용의 쟁점과 개선방향",
     publisher: "자유기업원 CFE Report",
   },
+  {
+    authors: "선애경",
+    year: 2025,
+    title: "미국 ‘교육부 폐지’ 구상 분석을 통한 한국 교육거버넌스 재구조화 방향",
+    publisher: "자유기업원",
+  },
 ];
 
 // 홈 Highlights에 노출할 대표논문 3편 (단독/제1저자 위주)
