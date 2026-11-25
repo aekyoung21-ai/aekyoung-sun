@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { publications, books, reports } from "@/content/publications";
+import { publications, books, presentations, reports } from "@/content/publications";
 import { researchProjects } from "@/content/projects";
 
 export const metadata: Metadata = {
   title: "논문·저서",
-  description: "선애경 — 학술 논문·저서·정책리포트, 연구 프로젝트 목록",
+  description: "선애경 — 학술 논문·저서·학술대회 발표·정책리포트, 연구 프로젝트 목록",
 };
 
 export default function Publications() {
@@ -59,6 +59,31 @@ export default function Publications() {
               <span className="justify-self-start sm:justify-self-end">
                 <span className="accent accent-bg rounded-full px-2.5 py-0.5 text-[11.5px] font-bold">
                   {b.role}
+                </span>
+              </span>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <section className="border-t-2 rule pt-6">
+        <h2 className="serif text-[24px] font-bold tracking-tight">학술대회 발표</h2>
+        <ul className="mt-4">
+          {presentations.map((c) => (
+            <li
+              key={c.title}
+              className="grid grid-cols-1 gap-x-8 gap-y-1 border-b hairline py-5 sm:grid-cols-[64px_minmax(0,1fr)_92px]"
+            >
+              <span className="serif text-[17px] font-bold tabular-nums">
+                {c.year}
+              </span>
+              <p className="text-[15px] leading-7">
+                {c.authors}. ({c.date}). <b>{c.title}</b>. <i>{c.venue}</i>
+                {c.pages ? `, ${c.pages}` : ""}.
+              </p>
+              <span className="justify-self-start sm:justify-self-end">
+                <span className="accent accent-bg rounded-full px-2.5 py-0.5 text-[11.5px] font-bold">
+                  {c.role}
                 </span>
               </span>
             </li>

@@ -164,6 +164,29 @@ export const books: Book[] = [
   },
 ];
 
+export interface Presentation {
+  authors: string;
+  year: number;
+  date: string;
+  title: string;
+  venue: string;
+  pages?: string;
+  role: string;
+}
+
+// 학술대회 발표 — 발표 자료(논문집) 확인된 것만, 날짜 역순
+export const presentations: Presentation[] = [
+  {
+    authors: "최병호, 선애경, 강전욱, 정가영",
+    year: 2025,
+    date: "2025.12.11",
+    title: "생성형 AI기반 텀프로젝트 설계, 운영 및 평가",
+    venue: "대한기계학회 창립 80주년 기념 학술대회 논문집",
+    pages: "1169",
+    role: "공동저자",
+  },
+];
+
 export interface Report {
   authors: string;
   year: number;
