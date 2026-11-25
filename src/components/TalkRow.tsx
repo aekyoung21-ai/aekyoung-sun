@@ -21,6 +21,11 @@ export default function TalkRow({ t }: { t: Talk }) {
             예정
           </span>
         )}
+        {t.ongoing && (
+          <span className="accent-fill rounded-full px-2.5 py-0.5 text-[11px] font-bold">
+            진행중
+          </span>
+        )}
       </span>
     </li>
   );
